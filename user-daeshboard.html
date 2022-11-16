@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="user-dashboard.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      
+
+      <!-- home section starts here -->
+      <div class="home" id="home">
+        <!-- header section starts here -->
+        <div class="head" id="head">
+          <div class="sidebar-toggle">
+            OFF-CAMPUS
+          </div>
+          <div class="search">
+            <form action="" class="form" id="form">
+              <i class="fa-solid fa-magnifying-glass" id="glass" onclick="f()"></i>
+              <input type="text" placeholder="search here" id="search" />
+            </form>
+          </div>
+          <div class="user">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <!-- header ends here -->
+
+        <!-- main -->
+        <section class="main" id="main">
+          <div class="top">
+            <a href="" class="item">
+              <div class="text">Teachers</div>
+              <div class="icon"><i class="fa-solid fa-eye"></i></div>
+            </a>
+            <a href="" class="item">
+              <div class="text">Information</div>
+              <div class="icon"><i class="fa-solid fa-users"></i></div>
+            </a>
+            <a href="" class="item">
+              <div class="text">Guid</div>
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+            </a>
+            <a href="" class="item">
+              <div class="text">Research</div>
+              <div class="icon"><i class="fa-solid fa-business-time"></i></div>
+            </a>
+            
+          </div>
+
+          
+
+        </section>
+
+
+
+
+
+
+        <!-- posts -->
+        <section class="posts" id="posts">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusantium praesentium quae laborum veniam nostrum atque sed velit, eveniet labore minima et dolore quaerat quis, nam quia, possimus rerum facilis.
+        </section>
+
+
+
+
+      </div>
+    </div>
+
+    <script>
+      function toggle() {
+        let x = document.getElementById("sidebar");
+        let y = document.getElementById("home");
+        let z = document.getElementById("brand-name");
+        // let logo = document.getElementsById("logo");
+
+        x.classList.toggle('active');
+        z.classList.toggle('active');
+        logo.classList.toggle('active');
+        //     if(x.style.width == "20vw"){
+        //     x.style.width = "5vw";
+        //     z.style.display = "none";
+        //     logo.style.display = "block";
+        //   ;
+        // }
+        // else{
+        //     x.style.width = "20vw";
+        //     z.style.display = "block";
+        // }
+      }
+      function f() {
+        let search = document.getElementById("search");
+        let form = document.getElementById("form");
+        if (search.style.display=="none") {
+          search.style.display="block";
+          form.style.width="250px";
+        }
+        else{
+          search.style.display="none";
+          form.style.width="30px";
+        }
+      }
+
+      function posts() {
+        let hposts=document.getElementById("main");
+        let sposts=document.getElementById("posts");
+        hposts.classList.toggle('hide-posts');
+        sposts.classList.toggle('show-posts');
+      }
+    </script>
+  </body>
+</html>
