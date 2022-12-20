@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: rgb(248, 248, 248);
+}
+.teachers-profile{
+    /* height: 100%; */
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+.teachers-profile .h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    padding: 12px 0px;
+    text-transform: uppercase;
+}
+
+.teachers-card{
+    height: 100%;
+    width: 100%;
+    /* background: red; */
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.card-container{
+    height: 170px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 6px 9px;
+    margin-left: 140px;
+    border: 1px solid rgb(13, 5, 255);
+    border-radius: 4px;
+}
+.teachers-card .card{
+    height: 170px;
+    width:  300px;
+    background: rgb(255, 255, 255);
+    margin: 8px 10px;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px gray;
+}
+.card .card-left{
+    height: 100%;
+    width: 40%;
+    background: whitesmoke;
+}
+.card-left img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.card .card-body-right{
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    background: green;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-body-right .font{
+    font-size: 4px;
+    margin-left: 20px;
+}
+.card-body-right>div{
+    margin-left: 30px;
+}
+.font input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.sub ul{
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.sub ul li{
+    height: 10px;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+}
+.sub ul li:hover{
+    background: none;
+}
+li input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* mobile view  */
+@media only screen and (max-width:600px) {
+    .teachers-card{
+        display: block;
+    }
+}

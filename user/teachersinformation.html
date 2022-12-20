@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teachers information</title>
+    <link rel="stylesheet" href="/utilities/teachersinformation.css">
+</head>
+<body>
+    <div id="teachers-container" class="teachers-container">
+        <div class="card">
+            <div class="head">
+                <div class="img-container">
+                    <img src="/images/1 (1).jpg" alt="bgbgb">
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="" class="info">
+                    <div class="name info-item">
+                        <input type="text" value="mizanur islam" disabled>
+                    </div>
+                    <div class="teacher-category info-item">
+                        <input type="text" value="off - campus teacher" disabled>
+                    </div>
+                    <div class="loc info-item">
+                        <input type="text" value="W.NO-3 ,Dhubri" disabled>
+                    </div>
+                    <div class="teacher-category info-item">
+                        <input type="text" value="off - campus teacher" disabled>
+                    </div>
+                    <div class="teacher-category info-item">
+                        <input type="text" value="off - campus teacher" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="subject">
+            subjects: <ul>
+                <li>sub1</li>
+                <li>sub2</li>
+                <li>sub3</li>
+                <li>sub4</li>
+            </ul>
+        </div>
+
+
+        <h2>time - Table</h2>
+
+<table>
+  <tr>
+    <th>sunday</th>
+    <th>monday</th>
+    <th>tuesday</th>
+    <th>wednessday</th>
+    <th>thursday</th>
+    <th>friday</th>
+    <th>daterday</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>
+        <select name="" id="sun" onchange="sun()">
+            <option value="">8:00am</option>
+            <option value="">10:00pm</option>
+        </select>
+    </td>
+    <td class="" id="error"></td>
+    <td>Germany</td>
+    <td>Germany</td>
+    <td>Germany</td>
+    <td>Germany</td>
+  </tr>
+
+
+</table>
+
+    </div>
+    <script>
+       function sun(){
+        let sun= document.getElementById('sun').value;
+        if (sun=="8:00am") {
+            document.getElementById('error').innerHTML="Unavailable";
+        }
+        }
+    </script>
+</body>
+</html>

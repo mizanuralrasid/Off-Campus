@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/utilities/teachers.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="logo" id="logo">
+                    <img src="" alt="logo" />
+                </div>
+                <div class="brand-name" id="brand-name">Off-Campus</div>
+            </div>
+            <div class="list-groups">
+                <ul class="list-items">
+                    <a href="">
+                        <li class="item">
+                            <span class="icon"><i class="fa-solid fa-house"></i></span><span class="text">Home</span>
+                        </li>
+                    </a>
+
+                    <a href="">
+                        <li class="item">
+                            <span class="icon"><i class="fa-solid fa-people-group"></i></span><span
+                                class="text">Course</span>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="item">
+                            <span class="icon"><i class="fa-solid fa-comment"></i></span><span class="text">My
+                                Course</span>
+                        </li>
+                    </a>
+
+                    <a href="">
+                        <li class="item">
+                            <span class="icon"><i class="fa-solid fa-gears"></i></span><span class="text">About
+                                us</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <!-- home section starts here -->
+        <div class="home" id="home">
+            <!-- header section starts here -->
+            <div class="head" id="head">
+                <div class="sidebar-toggle">
+                    <i class="fa-solid fa-bars" onclick="toggle()"></i>
+                </div>
+                <div class="search">
+                    <form action="" class="form" id="form">
+                        <i class="fa-solid fa-magnifying-glass" id="glass" onclick="f()"></i>
+                        <input type="text" placeholder="search here" id="search" />
+                    </form>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <hr>
+            <!-- header ends here -->
+
+            <!-- main -->
+            <!-- teachers selection section -->
+            <div class="main">
+
+                <div id="teachers" class="teachers-profile">
+                    <div class="h2">
+                        <h2 class="uppercase">Teachers</h2>
+                    </div>
+                    <div class="teachers-card" id="teachers-card">
+                        <div class="card-cntainer">
+                            <div id="card" class="card">
+                                <div class="card-left">
+                                    <img src="/Team4.png" alt="">
+                                </div>
+                                <div class="card-body-rigth">
+                                    <form action="" method="post">
+                                        <div class="name font">
+                                            <input type="text" value="Anidita Mazumder" disabled>
+                                        </div>
+                                        <div class="teacher-category font">
+                                            <input type="text" value=" Off-Campus teachers" disabled>
+                                        </div>
+                                        <div class="loc font">
+                                            <input type="text" value=" W.NO-3 ,Dhubri" disabled>
+                                        </div>
+                                        <div class="sub">
+                                            <ul>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button>confirm</button>
+                        </div>
+                        <div class="card-cntainer">
+                            <div id="card" class="card">
+                                <div class="card-left">
+                                    <img src="/Team4.png" alt="">
+                                </div>
+                                <div class="card-body-rigth">
+                                    <form action="" method="post">
+                                        <div class="name font">
+                                            <input type="text" value="Anidita Mazumder" disabled>
+                                        </div>
+                                        <div class="teacher-category font">
+                                            <input type="text" value=" Off-Campus teachers" disabled>
+                                        </div>
+                                        <div class="loc font">
+                                            <input type="text" value=" W.NO-3 ,Dhubri" disabled>
+                                        </div>
+                                        <div class="sub">
+                                            <ul>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button>confirm</button>
+                        </div>
+                        <div class="card-cntainer">
+                            <div id="card" class="card">
+                                <div class="card-left">
+                                    <img src="/Team4.png" alt="">
+                                </div>
+                                <div class="card-body-rigth">
+                                    <form action="" method="post">
+                                        <div class="name font">
+                                            <input type="text" value="Anidita Mazumder" disabled>
+                                        </div>
+                                        <div class="teacher-category font">
+                                            <input type="text" value=" Off-Campus teachers" disabled>
+                                        </div>
+                                        <div class="loc font">
+                                            <input type="text" value=" W.NO-3 ,Dhubri" disabled>
+                                        </div>
+                                        <div class="sub">
+                                            <ul>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button>confirm</button>
+                        </div>
+                        <div class="card-cntainer">
+                            <div id="card" class="card">
+                                <div class="card-left">
+                                    <img src="/Team4.png" alt="">
+                                </div>
+                                <div class="card-body-rigth">
+                                    <form action="" method="post">
+                                        <div class="name font">
+                                            <input type="text" value="Anidita Mazumder" disabled>
+                                        </div>
+                                        <div class="teacher-category font">
+                                            <input type="text" value=" Off-Campus teachers" disabled>
+                                        </div>
+                                        <div class="loc font">
+                                            <input type="text" value=" W.NO-3 ,Dhubri" disabled>
+                                        </div>
+                                        <div class="sub">
+                                            <ul>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button>confirm</button>
+                        </div>
+                        <div class="card-cntainer">
+                            <div id="card" class="card">
+                                <div class="card-left">
+                                    <img src="/Team4.png" alt="">
+                                </div>
+                                <div class="card-body-rigth">
+                                    <form action="" method="post">
+                                        <div class="name font">
+                                            <input type="text" value="Anidita Mazumder" disabled>
+                                        </div>
+                                        <div class="teacher-category font">
+                                            <input type="text" value=" Off-Campus teachers" disabled>
+                                        </div>
+                                        <div class="loc font">
+                                            <input type="text" value=" W.NO-3 ,Dhubri" disabled>
+                                        </div>
+                                        <div class="sub">
+                                            <ul>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button>confirm</button>
+                        </div>
+                        <div class="card-cntainer">
+                            <div id="card" class="card">
+                                <div class="card-left">
+                                    <img src="/Team4.png" alt="">
+                                </div>
+                                <div class="card-body-rigth">
+                                    <form action="" method="post">
+                                        <div class="name font">
+                                            <input type="text" value="Anidita Mazumder" disabled>
+                                        </div>
+                                        <div class="teacher-category font">
+                                            <input type="text" value=" Off-Campus teachers" disabled>
+                                        </div>
+                                        <div class="loc font">
+                                            <input type="text" value=" W.NO-3 ,Dhubri" disabled>
+                                        </div>
+                                        <div class="sub">
+                                            <ul>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+                                                <li><input type="text" value="sub1" disabled></li>
+
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button>confirm</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function f() {
+            let search = document.getElementById("search");
+            let form = document.getElementById("form");
+            if (search.style.display == "none") {
+                search.style.display = "block";
+                form.style.width = "250px";
+            }
+            else {
+                search.style.display = "none";
+                form.style.width = "30px";
+            }
+        }
+    </script>
+</body>
+
+</html>

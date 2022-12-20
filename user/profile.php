@@ -1,0 +1,172 @@
+<?php require '../php/config.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="../utilities/profile.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="logo" id="logo">
+          <img src="images/whatsapp_PNG95158.png" alt="logo" />
+        </div>
+        <div class="brand-name" id="brand-name">Dashboard</div>
+      </div>
+      <div class="list-groups">
+        <ul class="list-items">
+          <a href="">
+            <li class="item">
+              <span class="icon"><i class="fa-solid fa-house"></i></span><span class="text">Home</span>
+            </li>
+          </a>
+
+          <a href="">
+            <li class="item">
+              <span class="icon"><i class="fa-solid fa-people-group"></i></span><span class="text">Course</span>
+            </li>
+          </a>
+          <a href="">
+            <li class="item">
+              <span class="icon"><i class="fa-solid fa-comment"></i></span><span class="text">My Course</span>
+            </li>
+          </a>
+
+          <a href="">
+            <li class="item">
+              <span class="icon"><i class="fa-solid fa-gears"></i></span><span class="text">About us</span>
+            </li>
+          </a>
+
+  
+        </ul>
+      </div>
+    </div>
+
+    <!-- home section starts here -->
+    <div class="home" id="home">
+      <!-- header section starts here -->
+      <div class="head" id="head">
+        <div class="sidebar-toggle">
+          <i class="fa-solid fa-bars" onclick="toggle()"></i>
+        </div>
+        <div class="search">
+          <form action="" class="form" id="form">
+            <i class="fa-solid fa-magnifying-glass" id="glass" onclick="f()"></i>
+            <input type="text" placeholder="search here" id="search" />
+          </form>
+        </div>
+        <div class="user">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      <!-- header ends here -->
+
+      <!-- main -->
+      <div class="" id="profile">
+        <div id="profile-container">
+          <div class="profile-img">
+            <div class="profile-img-container">
+              <img src="../images/author.png" alt="">
+            </div>
+          </div>
+          <div class="" id="profile-information">
+            <div class="top">
+              <h4>Profile information</h4>
+              <a href="">
+                <h6>Edit</h6>
+              </a>
+            </div>
+            <hr>
+            <div id="main-table">
+              <table class="table table-borderless">
+                <?php
+                session_start();
+                if (!isset($_SESSION['phone'])) {
+                  header("location: index.php");
+                } else {
+
+
+                  $currentUser = $_SESSION['phone'];
+                  $s = "select * from registration where phone='$currentUser'";
+                  $result = $conn->query($s);
+                  if (mysqli_num_rows($result) > 0) {
+                    foreach ($result as $row) {
+                ?>
+
+                      <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td><?php echo $row['name']; ?></td>
+                      </tr>
+                      <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><?php echo $row['email']; ?></td>
+                      </tr>
+                      <tr>
+                        <td>Phone</td>
+                        <td>:</td>
+                        <td><?php echo $row['phone']; ?></td>
+                      </tr>
+                <?php
+                    }
+                  }
+                }
+                ?>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggle() {
+      let x = document.getElementById("sidebar");
+      let y = document.getElementById("home");
+      let z = document.getElementById("brand-name");
+      // let logo = document.getElementsById("logo");
+
+      x.classList.toggle('active');
+      z.classList.toggle('active');
+      logo.classList.toggle('active');
+      //     if(x.style.width == "20vw"){
+      //     x.style.width = "5vw";
+      //     z.style.display = "none";
+      //     logo.style.display = "block";
+      //   ;
+      // }
+      // else{
+      //     x.style.width = "20vw";
+      //     z.style.display = "block";
+      // }
+    }
+
+    function f() {
+      let search = document.getElementById("search");
+      let form = document.getElementById("form");
+      if (search.style.display == "none") {
+        search.style.display = "block";
+        form.style.width = "250px";
+      } else {
+        search.style.display = "none";
+        form.style.width = "30px";
+      }
+    }
+  </script>
+</body>
+
+</html>

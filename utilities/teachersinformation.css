@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.teachers-container{
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    /* background: red; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 200px;
+    width: 350px;
+    border: 1px solid rgb(8, 0, 255);
+    border-radius: 4px;
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.card .head{
+    height: 100%;
+    width: 30%;
+    background: red;
+}
+.head .img-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+}
+.card .card-body{
+    height: 100%;
+    width: 70%;
+    /* background: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body .info .info-item input{
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.teachers-container .subject{
+    height: 50px;
+    width: 100%;
+    margin-left: 50%;
+}
+.subject ul{
+    list-style: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  

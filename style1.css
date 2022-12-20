@@ -1,0 +1,788 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    height: 100vh !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(images/1\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar-brand {
+    color: #ff7200 !important;
+    font-family: Arial !important;
+}
+
+.navbar-toggler {
+    border: none;
+    background: white;
+    color: #fff;
+}
+
+.navbar-nav {
+    margin-left: 25vw !important;
+}
+
+.nav-item {
+    margin-left: 5vh;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bolder !important;
+
+}
+
+.nav-link:hover {
+    color: #ff7200 !important;
+
+}
+
+#srch {
+    font-family: 'Times New Roman';
+    background: transparent;
+    border: 1px solid #ff7200;
+    color: #fff;
+    border-right: none;
+    float: left;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    outline: none;
+}
+
+#btn {
+    background: #ff7200;
+    border: 2px solid #ff7200;
+
+    color: #fff;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#btn:focus {
+    outline: none !important;
+}
+
+#content {
+    height: auto !important;
+    margin: auto !important;
+    color: #fff !important;
+    position: relative !important;
+}
+
+#content h1 {
+    font-family: 'Times New Roman' !important;
+    font-size: 50px !important;
+    padding-left: 20px !important;
+    letter-spacing: 2px !important;
+}
+
+#content span {
+    color: #ff7200;
+    font-size: 65px
+}
+
+#content .par {
+    padding-left: 20px !important;
+    padding-bottom: 25px !important;
+    font-family: Arial;
+    letter-spacing: 1.2px !important;
+    line-height: 30px !important;
+}
+
+#content #btn {
+    width: 160px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+
+}
+
+#content #btn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+#btn:hover {
+    background-color: #fff !important;
+}
+
+
+/* login form design */
+
+.form-container {
+    display: flex;
+}
+
+.form {
+    width: 50vh;
+    height: 100%;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%); */
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 40px;
+    left: 870px;
+    transform: translate(0%, -5%);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form h2 {
+    width: 97%;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 240px;
+    height: 100px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #200fbb;
+}
+
+/* offering section start here */
+#offering {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.998);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    /* overflow: auto; */
+    
+}
+
+.theme-text {
+    color: #ff0000d3;
+}
+
+#offering-header {
+    font-size: 30px !important;
+}
+
+#offering-header h1 {
+    border: green;
+    font-size: 60px !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* card */
+#card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card {
+    /* position: relative; */
+    height: 20vh;
+    width: 16vw;
+    background: rgba(255, 255, 255, 0.23) !;
+    backdrop-filter: blur(7px);
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    margin: 10px 12px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px gray;
+}
+
+.card-header {
+    height: 50%;
+    width: 100%;
+    /* background: red; */
+}
+
+.card-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-body {
+    padding: 0px 0px;
+
+}
+
+.card-body p {
+    color: blue;
+    font-size: 15px;
+}
+
+.card-body h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.card:hover .card-body {
+    color: #000000;
+    background: rgb(221, 124, 14);
+    transform-origin: left;
+    transition: all 1.2s;
+}
+
+.card:hover p {
+    color: white;
+}
+
+
+
+/* learning sction */
+
+#learning{
+    height: 100%;
+    width: 100%;
+    padding: 70px 0px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #learning .learning-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #learning .learning-container h2{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #learning .learning-container h4{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  
+  .learning-container a button{
+    height: 100%;
+    width: 140px;
+    background: #ffba81;
+    padding: 7px 17px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 14px;
+  }
+
+
+
+        /* teachers section starts here */
+  
+        .teachers-profile{
+            /* height: 100%; */
+            width: 100%;
+            background: rgb(255, 255, 255);
+        }
+        .teachers-profile .h2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: red; */
+            padding: 12px 0px;
+            text-transform: uppercase;
+        }
+        
+        .teachers-card{
+            height: 100%;
+            width: 90%;
+            /* background: red; */
+            margin: 0px 0px;
+            padding: 10px 0px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .card-container{
+            margin-left: 50%;
+            margin-top: 50%;
+            height: 170px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50% , 50%);
+        }
+       .cnfrm-btn{
+            position: relative;
+            padding: 6px 9px;
+            margin-left: 50%;
+            border: 1px solid rgb(13, 5, 255);
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+        #card {
+            width: 95%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .teachers-card .card{
+            height: 170px;
+            width:  90%;
+            background: rgb(255, 255, 255);
+            margin: 8px 20px;
+            display: flex;
+            border-radius: 4px;
+            box-shadow: 2px 2px 6px gray;
+            border: 1px solid rebeccapurple;
+        }
+        .card .card-left{
+            height: 100%;
+            width: 70%;
+            background: whitesmoke;
+        }
+        .card-left img{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .card .card-body-right{
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+            display: flex;
+            background: green;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-body-right .font{
+            font-size: 4px;
+            margin-left: 20px;
+        }
+        .card-body-right>div{
+            margin-left: 30px;
+        }
+        .font input{
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+        .sub ul{
+            margin-top: 12px;
+            margin-left: 20px;
+        }
+        .sub ul li{
+            height: 10px;
+            width: 100%;
+            margin-top: 0px;
+            padding: 0px;
+        }
+        .sub ul li:hover{
+            background: none;
+        }
+        li input{
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+        
+        /* mobile view  */
+        @media only screen and (max-width:600px) {
+            .teachers-card{
+                width: 96%;
+                display: block;
+            }
+        }
+
+
+
+  #App{
+    margin-bottom: 30px;
+  }
+  .appleftcontent img{
+    height: 20vh;
+    width: 30%;
+  }
+  .appContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+  }
+  .appContent #Appimg img{
+    height: 50vh;
+    width: 20vw;
+  }
+
+/* footer design starts here */
+.footer{
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.footer-container{
+    padding: 20px 40px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.col{
+    margin: 8px 60px;
+}
+
+.col a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.col h3{
+    color: #cd5c00;
+    font-size: 20px;
+}
+
+.f-items{
+    display: flex;
+    flex-direction: column;
+}
+.col a{
+    margin: 10px 2px;
+}
+#newsletter form input{
+    outline: none;
+    padding: 0px 2px;
+}
+
+#newsletter form button{
+    background: #cd5c00;
+    padding: 2px 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+#newsletter form button:hover{
+    color: #cd5c00;
+    border: 1px solid #cd5c00;
+    background-color: transparent;
+}
+
+.col .logo{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.col .logo img{
+    height: 100%;
+    width: 100%;
+}
+
+/* footer design ends here */
+
+
+
+
+
+/* mobile view */
+
+
+@media only screen and (max-width: 930px) {
+    #card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .card {
+        /* position: relative; */
+        height: 40vh;
+        width: 30vw;
+        background: rgba(255, 255, 255, 0.23) !;
+        backdrop-filter: blur(7px);
+        /* border: 2px solid black; */
+        border-radius: 5px;
+        margin: 10px 12px;
+        overflow: hidden;
+        box-shadow: 2px 2px 12px gray;
+    }
+
+
+    #myloginform{
+        display: none;
+    }
+
+    
+
+    .footer-container{
+        padding: 20px 0px;
+        display: flex;
+        
+    }
+
+    
+
+    .col{
+        margin: 8px 25px;
+    }
+
+
+    .col a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        margin: 1px 0px;
+    }
+    
+    .col h3{
+        color: #cd5c00;
+        font-size: 18px;
+    }
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        color: #ff7200 !important;
+        font-family: Arial !important;
+    }
+
+    #content {
+        width: 100%;
+        position: relative;
+    }
+
+    #content h1 {
+        font-family: 'Times New Roman';
+        font-size: 20px !important;
+        padding-left: 2px;
+        margin-top: -50px;
+    }
+
+    #content h1 span {
+        font-size: 10px;
+        display: none;
+    }
+
+    #content .par {
+        /* padding-left: 20px; */
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 20px;
+        display: none;
+    }
+
+    #content #btn {
+        width: 70px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+    }
+    #myloginform{
+        display: none;
+    }
+
+    /* offering section start here */
+    #offering {
+        background-color: rgba(255, 255, 255, 0.998);
+        backdrop-filter: blur(10px);
+    }
+    #offering-header h1 {
+        border: green;
+        font-size: 30px !important;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+
+   #card {
+        display: block;
+    } 
+
+    .card {
+        height: 20vh;
+        width: 80vw;
+    } 
+
+    .card-body p {
+        color: blue;
+        font-size: 16px;
+    }
+    .card-header {
+        height: 50%;
+        width: 100%;
+        /* background: red; */
+    }
+
+    #learning{
+        margin-top: 50px;
+        padding: 20px 5px;
+    }
+
+    .learning-container h2{
+        font-size: 20px !important;
+    }
+    .learning-container h4{
+        font-size: 14px !important;
+    }
+    .learning-container a button{
+        font-size: 8px !important;
+        width: 90px;
+    }
+
+
+
+
+
+
+/* App section */
+    .appContent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px;
+      }
+      .appleftcontent img{
+        width: 100%;
+      }
+      .appContent #Appimg img{
+        height: 50vh;
+        width: 60vw;
+        margin-top: 10px;
+      }
+
+      .footer-container{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col{
+        margin: 8px 50px;
+    }
+
+
+    .col a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        margin: 1px 0px;
+    }
+    
+    .col h3{
+        color: #cd5c00;
+        font-size: 13px;
+    }
+}
