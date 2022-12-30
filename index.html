@@ -1,43 +1,3 @@
-<?php
-
-require 'php/config.php';
-
-$error = "";
-
-if (isset($_POST['submit'])) {
-
-    // check the empty field
-
-    if (!empty(trim($_POST['email'])) && !empty(trim($_POST['phone']))) {
-
-        $email = $conn->real_escape_string($_POST['email']);
-        $phone = $conn->real_escape_string($_POST['phone']);
-        //   $name = $conn->real_escape_string($_POST['name']);
-
-        $sq = "select id from registration where email= '$email' && phone = '$phone'";
-
-        $r = $conn->query($sq);
-
-        $emailCount = mysqli_num_rows($r);
-
-        if ($emailCount) {
-            session_start();
-            $_SESSION["id"] = $id;
-            $_SESSION["loggedin"] = true;
-            $_SESSION['phone'] = $phone;
-            echo "<script>window.location='home.php'</script>";
-            header("location: user/index.php");
-        } else {
-            $error = "password incorrect";
-        }
-    }
-}
-
-?>
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -73,13 +33,13 @@ if (isset($_POST['submit'])) {
                 <a class="nav-link text-uppercase active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="/about.html">about</a>
+                <a class="nav-link text-uppercase" href="about.html">about</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#">feedback</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="/contact.html">contact</a>
+                <a class="nav-link text-uppercase" href="contact.html">contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#">login</a>
